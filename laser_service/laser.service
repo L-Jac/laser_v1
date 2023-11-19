@@ -1,0 +1,13 @@
+[Unit]
+Description=My Laser Service
+
+[Service]
+ExecStart=/usr/bin/python3 /home/firefly/laser_v1/main.py
+Restart=always
+User=firefly
+Group=firefly
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=PYTHONPATH=/home/firefly/laser_v1
+
+[Install]
+WantedBy=multi-user.target
