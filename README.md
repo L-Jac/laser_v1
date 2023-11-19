@@ -3,7 +3,9 @@ sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 要使用 systemd 服务管理器来实现自启动 `/home/firefly/laser_v1` 下的 `main.py`，
 可以按照以下步骤操作：  
 
-**创建一个新的 systemd service 文件**。你可以在 `/etc/systemd/system` 目录下创建一个新的文件，例如 `laser.service`，并在其中添加以下内容：
+**创建一个新的 systemd service 文件**。  
+（已在文件夹laser_service中）  
+可以在 `/etc/systemd/system` 目录下创建一个新的文件，例如 `laser.service`，并在其中添加以下内容：
 
 ```bash
 [Unit]
